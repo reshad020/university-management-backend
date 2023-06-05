@@ -12,9 +12,7 @@
     "prettier:check": "prettier --ignore-path .gitignore --write \"**/*.+(js|ts|json)\""
   },
   "lint-staged": {
-    "src/**/*/.ts": [
-      "yarn lint-prettier"
-    ]
+    "src/**/*/.ts": "yarn lint-prettier"
   },
   "devDependencies": {
     "@types/cors": "^2.8.13",
