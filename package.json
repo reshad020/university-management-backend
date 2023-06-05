@@ -8,11 +8,11 @@
     "lint": "eslint --ignore-path .eslintignore --ext .js,.ts .",
     "start": "ts-node-dev --respawn --transpile-only src/server.ts",
     "lint:fix": "eslint --fix",
-    "lint-prettier": "yarn lint && yarn prettier-check",
+    "lint-prettier": "yarn lint && yarn prettier:check",
     "prettier:check": "prettier --ignore-path .gitignore --write \"**/*.+(js|ts|json)\""
   },
   "lint-staged": {
-    "./src/**/*/.ts": "yarn lint-prettier"
+    "*.ts": "yarn lint-prettier"
   },
   "devDependencies": {
     "@types/cors": "^2.8.13",
