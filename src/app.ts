@@ -9,7 +9,7 @@ app.use(express.urlencoded({ extended: true }))
 
 //testing route
 app.get('/', (req: Request, res: Response) => {
-  res.send('Working fine')
+  res.send('Working fin')
 })
 
 export default app
